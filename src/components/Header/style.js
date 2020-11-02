@@ -15,12 +15,3 @@ export const StyledAmount = styled.p`
   color: #483B3B;
   font-size: 12px;
 `
-export const StyledButton = styled.button`
-  color: #483B3B;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  background: transparent;
-  font-size: 44px;
-  padding: 0;
-`
