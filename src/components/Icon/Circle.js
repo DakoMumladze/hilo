@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Plus = () => {
+const Circle = () => {
   return (
   <svg xmlns="http://www.w3.org/2000/svg"
    width="32.809"
@@ -21,4 +21,4 @@ const Plus = () => {
   )
 }
 
-export default Plus
+export default Circle

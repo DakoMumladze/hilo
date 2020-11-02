@@ -2,7 +2,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StyledHeader, StyledTitle, StyledAmount, StyledButton } from './style'
-import Icon from '../Icon/Plus'
+import Icon from '../Icon'
 
 const Header = ({ title, amount }) => {
   return (
@@ -10,7 +10,7 @@ const Header = ({ title, amount }) => {
         <StyledTitle>{title}</StyledTitle>
         <StyledAmount>{amount}฿</StyledAmount>
         <StyledButton>
-          <Icon />
+          <Icon name='Plus'/>
         </StyledButton>
       </StyledHeader>
   )
