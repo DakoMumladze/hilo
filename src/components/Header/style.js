@@ -4,6 +4,7 @@ export const StyledHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 34.3px;
 `
 export const StyledTitle = styled.h1`
   color: #FFB000;
