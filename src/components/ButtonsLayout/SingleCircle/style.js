@@ -12,5 +12,9 @@ export const StyledCircle = styled.div`
   align-items: center;
   font-weight: bold;
   cursor: pointer;
+  ${props => props.transform && ({
+    width: '136px',
+    borderRadius: '28px'
+ })
   }
 `

@@ -21,7 +21,7 @@ Text.propTypes = {
   size: PropTypes.string,
   color: PropTypes.string,
   fontWeight: PropTypes.string,
-  textAligment: PropTypes.textAligment
+  textAligment: PropTypes.string
 }
 
 export default Text

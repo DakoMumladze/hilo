@@ -8,11 +8,11 @@ import AmountContainer from './AmountContainer'
 const ButtonsLayout = () => {
   const [textFirst, setTextFirst] = useState('1/2')
   const [textSecond, setTextSecond] = useState('2X')
-  const [show, setShow] = useState(true)
+  const [displayAmount, setDisplay] = useState(true)
   const handleClick = () => {
     setTextFirst('LO 1.53X')
     setTextSecond('HI 1.52X')
-    setShow(false)
+    setDisplay(false)
   }
   return (
     <StyledWrapper>
@@ -24,12 +24,14 @@ const ButtonsLayout = () => {
       textAligment='center'
       />
       <StyledContainer>
-        <SingleCircle text={textFirst}/>
-        {show ? <AmountContainer show={show}/> : null}
-        <SingleCircle text={textSecond}/>
+        <SingleCircle text={textFirst} transform={!displayAmount}/>
+        {displayAmount ? <AmountContainer /> : null}
+        <SingleCircle text={textSecond} transform={!displayAmount}/>
       </StyledContainer>
       <StyledButton onClick={handleClick}>
-        PLAY
+        {displayAmount
+          ? 'PLAY'
+          : 'CASHOUT' }
       </StyledButton>
     </StyledWrapper>
   )

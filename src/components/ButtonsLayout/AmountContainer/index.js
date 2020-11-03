@@ -15,4 +15,5 @@ const Amount = () => {
     </StyledCircleText>
   )
 }
+
 export default Amount

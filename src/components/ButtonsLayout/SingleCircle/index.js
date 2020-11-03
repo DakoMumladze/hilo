@@ -3,12 +3,13 @@ import React from 'react'
 import { StyledCircle } from './style'
 import PropTypes from 'prop-types'
 
-const SingleCircle = ({ text }) => {
+const SingleCircle = ({ text, transform }) => {
   return (
-    <StyledCircle>{text}</StyledCircle>
+    <StyledCircle transform={transform}>{text}</StyledCircle>
   )
 }
 SingleCircle.propTypes = {
-  text: PropTypes.string.isRequired
+  text: PropTypes.string.isRequired,
+  transform: PropTypes.bool.isRequired
 }
 export default SingleCircle
