@@ -1,24 +1,29 @@
 
 import React from 'react'
-import PropTypes from 'prop-types'
-import { StyledHeader, StyledTitle, StyledAmount } from './style'
+import { StyledHeader } from './style'
 import Icon from '../Icon'
 import Button from '../Button'
+import Text from '../Text'
 
-const Header = ({ title, amount }) => {
+const Header = () => {
   return (
       <StyledHeader>
-        <StyledTitle>{title}</StyledTitle>
-        <StyledAmount>{amount}฿</StyledAmount>
+        <Text
+          text='hilo'
+          size='26px'
+          color='#FFB000'
+          fontWeight='bold'
+        />
+        <Text
+          text='0.00000000 ฿'
+          size='12px'
+          color='#483B3B'
+        />
         <Button>
           <Icon name='Plus'/>
         </Button>
       </StyledHeader>
   )
-}
-Header.propTypes = {
-  title: PropTypes.string.isRequired,
-  amount: PropTypes.number.isRequired
 }
 
 export default Header

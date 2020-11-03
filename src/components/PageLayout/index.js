@@ -1,15 +1,17 @@
 
 import React from 'react'
 import { StyledContent } from './style'
-import Header from '../Header/index'
-import CardLayout from '../CardLayout/index'
+import Header from '../Header'
+import CardLayout from '../CardLayout'
+import ButtonsLayout from '../ButtonsLayout'
 
 const PageLayout = () => {
   return (
       <StyledContent>
-        <Header title='hilo' amount='0.00000000'/>
+        <Header />
         <CardLayout />
-        </StyledContent>
+        <ButtonsLayout />
+      </StyledContent>
   )
 }
 
